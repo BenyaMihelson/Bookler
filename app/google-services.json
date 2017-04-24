@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "1062576094532",
+    "project_id": "firebase-bookler"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062576094532:android:d969f38d73bdd6cd",
+        "android_client_info": {
+          "package_name": "com.laptenko.bookler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVALHSNoVZLyQOz-2_JbcxeOd_FUqSnWI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-90424196-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

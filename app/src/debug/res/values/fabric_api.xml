@@ -1,0 +1,12 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Fabric API key.
+
+    Go to https://fabric.io/kits/android/digits/install SignUp and get key
+    -->
+
+    <string name="fabric_api_key" translatable="false" templateMergeStrategy="preserve">
+        0b62b42f385be1aae2fc40a1352b1475e967eadb
+    </string>
+
+</resources>

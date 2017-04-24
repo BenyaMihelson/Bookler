@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1565c0</color>
+    <color name="colorAccent">#00bfa5</color>
+    <color name="colorAccentPressed">#80cbc4</color>
+    <color name="colorBackground">#37474f</color>
+    <color name="notif_bg">#424242</color>
+</resources>

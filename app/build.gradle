@@ -1,0 +1,74 @@
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'io.fabric'
+
+
+int version_code = 12
+String version_name = "v0.4.8"
+String file_base_name = "Bookler-$version_name"
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.laptenko.bookler"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode version_code
+        versionName version_name
+        archivesBaseName = file_base_name
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'ExtraTranslation', 'MissingTranslation', 'InvalidPackage', 'MissingQuantity', 'AppCompatResource'
+
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+
+}
+
+dependencies {
+
+
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+
+    compile 'com.google.dagger:dagger:2.6.1'
+    apt 'com.google.dagger:dagger-compiler:2.6.1'
+
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile('com.digits.sdk.android:digits:2.0.0@aar') {
+        transitive = true;
+    }
+
+    compile 'com.yandex.android:mobmetricalib:2.42'
+
+    compile 'com.danikula:videocache:2.6.3'
+
+    compile 'com.google.android.gms:play-services-analytics:10.0.1'
+
+}

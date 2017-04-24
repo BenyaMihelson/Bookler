@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="album"
+            type="com.mitlosh.bookplayer.model.Album" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="188dp"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@{album.image}"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground"/>
+    </FrameLayout>
+</layout>

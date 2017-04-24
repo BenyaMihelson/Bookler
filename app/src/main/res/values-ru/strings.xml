@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dgts__confirmation_edit_hint">Введите 6-значный код, который мы Вам отправили</string>
+    <string name="dgts__confirmation_error">Не удалось подтвердить Ваш номер телефона</string>
+    <string name="dgts__confirmation_error_alternative">К сожалению, нам не удалось отправить Вам код подтверждения.</string>
+    <string name="dgts__resend_confirmation_button_code">Повторить СМС</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center|top"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center|top"
+            android:visibility="gone"/>
+
+        <!--<Button
+            android:id="@+id/top_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="КУПИТЬ КНИГУ"
+            android:layout_gravity="center|top"/>
+-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:clickable="true"
+            android:scrollbars="vertical"
+            android:clipToPadding="false" />
+
+    </FrameLayout>
+</layout>
